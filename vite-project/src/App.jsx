@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import View from './components/View'
 import Records from './components/Records'
+import Form from './components/Form'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
     <h1>Welcome to React</h1>
     <View/>
     <Records/>
+    <Form/>
     </>
   )
 }
