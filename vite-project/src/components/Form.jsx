@@ -8,6 +8,7 @@ const Form = () => {
   return (
   <>
     <div id="formcard">
+      <h2>Registration Form</h2>
     <Box
       component="form"
       sx={{
@@ -16,7 +17,7 @@ const Form = () => {
       noValidate
       autoComplete="off"
     ><div>
-      <p>Name</p>
+      <p>Name:</p>
     <TextField
       required
       id="outlined-required"
@@ -34,18 +35,11 @@ const Form = () => {
     /></div><div>
     <p>Semester:</p>
   <TextField
-    notrequired
+    required
     id="outlined-required"
-    label="Values from 1 to 8"
-    defaultValue="Hello World"
+    label="Semester"
+    defaultValue=" "
   /></div></Box>
-
-      <label htmlFor='name'>Name:</label>
-      <input class="inputfield" id="name" type='text'></input>
-      <label htmlFor="department">Department:</label>
-      <input class="inputfield" id="department" type='text'></input>
-      <label htmlFor="semester">Semester (1 to 8):</label>
-      <input class="inputfield" id="semester" type='number'></input>
       <div>
         
     <Stack direction="row" spacing={2}>

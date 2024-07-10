@@ -5,6 +5,8 @@ import './App.css'
 import View from './components/View'
 import Records from './components/Records'
 import Form from './components/Form'
+import {Routes, Route} from 'react-router-dom'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,8 +16,10 @@ function App() {
 
     <h1>Welcome to React</h1>
     <View/>
-    <Records/>
-    <Form/>
+    <Routes>
+      <Route path='/' element={<Records/>}></Route>
+      <Route path='/add' element={<Form/>}></Route>
+    </Routes>
     </>
   )
 }
