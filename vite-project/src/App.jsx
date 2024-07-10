@@ -18,7 +18,14 @@ function App() {
     <View/>
     <Routes>
       <Route path='/' element={<Records/>}></Route>
-      <Route path='/add' element={<Form/>}></Route>
+      {/* <Route path='/add' element={<Form/>}></Route> */}
+
+      <Route path='/add' element={<Form person={{
+        fname:"Swathi", 
+        department:"English Literature",
+        semester:"4"
+        }}/>}>
+        </Route>
     </Routes>
     </>
   )
