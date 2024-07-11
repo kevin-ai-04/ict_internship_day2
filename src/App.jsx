@@ -6,6 +6,7 @@ import View from './components/View'
 import Records from './components/Records'
 import Form from './components/Form'
 import {Routes, Route} from 'react-router-dom'
+import DemoAxios from './components/DemoAxios'
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
     <h1>Welcome to React</h1>
     <View/>
     <Routes>
-      <Route path='/' element={<Records/>}></Route>
+      <Route path='/' element={<DemoAxios/>}></Route>
       {/* <Route path='/add' element={<Form/>}></Route> */}
 
       <Route path='/add' element={<Form person={{
